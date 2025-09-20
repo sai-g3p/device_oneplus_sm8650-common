@@ -737,6 +737,7 @@ vendor/lib64/vendor.qti.hardware.limits@1.1.so
 vendor/lib64/vendor.qti.hardware.limits@1.2.so
 
 # Media
+odm/etc/camera/media_profiles.xml:vendor/etc/media_profiles_cliffs_v1.xml;TRYSRCFIRST
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 vendor/bin/hw/qconfigservice
@@ -761,7 +762,6 @@ vendor/etc/media_pineapple/video_system_specs.json
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_cliffs_v0.xml
-vendor/etc/media_profiles_cliffs_v1.xml
 vendor/etc/media_profiles_pineapple.xml
 vendor/etc/media_profiles_vendor.xml
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
