@@ -292,12 +292,14 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Connection Security
 vendor/bin/qwesd
-vendor/bin/ssgqmigd64
+vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/etc/init/qwesd.rc
 vendor/etc/init/ssgtzd.rc
+vendor/etc/ssg/ta_config.json
 vendor/etc/seccomp_policy/qwesd@2.0.policy
 vendor/etc/ssg/tz_whitelist.json
+vendor/lib64/libtaautoload.so
 
 # Context Hub
 odm/etc/init/android.hardware.contexthub-service.qmi.rc
@@ -403,6 +405,14 @@ vendor/lib64/vendor.libdpmtcm.so
 vendor/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so
+
+# DCF
+vendor/bin/qsap_dcfd
+vendor/etc/init/dcfd.rc
+vendor/etc/seccomp_policy/qsap_dcfd.policy
+vendor/lib64/libDcfHalFramework.so
+vendor/lib64/libDcfHalLogger.so
+vendor/lib64/libDcfHalQtiMutex.so
 
 # DSP
 vendor/bin/dspservice
@@ -694,6 +704,10 @@ vendor/etc/vintf/manifest/manifest_identity_credential.xml
 vendor/lib64/libqtiidentitycredential.so
 
 # Kernel
+vendor/bin/init.kernel.post_boot-cliffs.sh
+vendor/bin/init.kernel.post_boot-cliffs_2_2_1.sh
+vendor/bin/init.kernel.post_boot-cliffs_2_3_0.sh
+vendor/bin/init.kernel.post_boot-cliffs_3_3_1.sh
 vendor/bin/init.kernel.post_boot-memory.sh
 vendor/bin/init.kernel.post_boot-pineapple_2_3_1_1.sh
 vendor/bin/init.kernel.post_boot-pineapple_2_3_2_0.sh
@@ -704,6 +718,7 @@ vendor/bin/vendor_modprobe.sh
 
 # Keymaster
 vendor/bin/hw/android.hardware.security.keymint-service-qti
+vendor/bin/KmInstallKeybox
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
 vendor/lib64/libkeymasterdeviceutils.so
@@ -1205,14 +1220,18 @@ odm/lib64/liboplus_service.so
 odm/lib64/vendor.oplus.hardware.oplusSensor-V1-ndk.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service
 vendor/bin/init.qcom.sensors.sh
+vendor/bin/qsap_sensors
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.qsap.sensors.rc
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/etc/seccomp_policy/qsap_sensors.policy
 vendor/etc/vintf/manifest/vendor.qti.hardware.sensorscalibrate.xml
+vendor/lib64/libSensorsInterface.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libqsh.so
 vendor/lib64/libqsh_ble_pb.so
