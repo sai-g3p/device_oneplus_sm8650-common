@@ -183,14 +183,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libbinder_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
             ;;
-        vendor/lib64/libpwirishalwrapper.so|odm/lib64/libpwirishalwrapper.so)
-            case "${DEVICE}" in
-            waffle)
-                [ "$2" = "" ] && return 0
-                "${PATCHELF}" --replace-needed "android.hardware.graphics.composer3-V2-ndk.so" "android.hardware.graphics.composer3-V3-ndk.so" "${2}"
-                ;;
-            esac
-            ;;
         *)
             return 1
             ;;
