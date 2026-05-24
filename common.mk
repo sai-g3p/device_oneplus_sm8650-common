@@ -473,9 +473,8 @@ PRODUCT_COPY_FILES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare-service.default
+    vendor.lineage.powershare@1.0-service.oplus
 
-$(call soong_config_set,lineage_powershare,powershare_path,/proc/wireless/enable_tx)
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
