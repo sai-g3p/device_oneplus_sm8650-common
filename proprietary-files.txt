@@ -952,6 +952,10 @@ system_ext/etc/init/qspa_system.rc
 system_ext/etc/qspa/qspa_default.rc
 
 # QSPM
+vendor/bin/vendor.qti.qspmhal-service
+vendor/etc/init/vendor.qti.qspmhal-service.rc
+vendor/etc/seccomp_policy/qspm.policy
+vendor/etc/vintf/manifest/vendor.qti.qspmhal-service.xml
 vendor/lib64/libqspm-mem-utils-vendor.so
 vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
 vendor/lib64/vendor.qti.qspmhal-impl.so
@@ -1282,6 +1286,29 @@ vendor/etc/sensors/config/lanai_tmd2755_0.json
 vendor/etc/sensors/config/lanai_vertigo_ak991x_0.json
 vendor/etc/sensors/config/lanai_vertigo_lsm6dsv_0.json
 vendor/etc/sensors/config/lanai_vertigo_lsm6dsv_1.json
+vendor/etc/sensors/config/palawan_bu52053nvx_0.json
+vendor/etc/sensors/config/palawan_default_sensors.json
+vendor/etc/sensors/config/palawan_dynamic_sensors.json
+vendor/etc/sensors/config/palawan_dynamic_sensors_template.json
+vendor/etc/sensors/config/palawan_fcal_mmc56x3x_0.json
+vendor/etc/sensors/config/palawan_irq.json
+vendor/etc/sensors/config/palawan_lps22df_0.json
+vendor/etc/sensors/config/palawan_lsm6dso_0.json
+vendor/etc/sensors/config/palawan_lsm6dso_1.json
+vendor/etc/sensors/config/palawan_mmc56x3x_0.json
+vendor/etc/sensors/config/palawan_mtp_lsm6dso_0.json
+vendor/etc/sensors/config/palawan_mtp_lsm6dso_1.json
+vendor/etc/sensors/config/palawan_mtp_mmc56x3x_0.json
+vendor/etc/sensors/config/palawan_power_0.json
+vendor/etc/sensors/config/palawan_qrd_lsm6dso_0.json
+vendor/etc/sensors/config/palawan_qrd_mmc56x3x_0.json
+vendor/etc/sensors/config/palawan_qrd_tmd2755_0.json
+vendor/etc/sensors/config/palawan_qsh_ble_0.json
+vendor/etc/sensors/config/palawan_sx932x_0.json
+vendor/etc/sensors/config/palawan_tmd2755_0.json
+vendor/etc/sensors/config/palawan_vertigo_lsm6dso_0.json
+vendor/etc/sensors/config/palawan_vertigo_lsm6dso_1.json
+vendor/etc/sensors/config/palawan_vertigo_mmc56x3x_0.json
 vendor/etc/sensors/config/qsh_ble.json
 vendor/etc/sensors/config/qsh_camera_common.json
 vendor/etc/sensors/config/qsh_camera_imx480_3.json
