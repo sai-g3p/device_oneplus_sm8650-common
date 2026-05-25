@@ -361,6 +361,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     KProfiles
 
+# Keys for Signing
+-include vendor/lineage-priv/keys/keys.mk
+
 # Lindroid
 TARGET_BUILD_LINDROID := true
 
