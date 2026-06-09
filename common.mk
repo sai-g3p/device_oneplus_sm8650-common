@@ -324,6 +324,7 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot.sh \
     init.kernel.post_boot-cliffs_default_3_4_1.sh \
     init.kernel.post_boot-pineapple.sh \
+    init.kernel.post_boot-cliffs.sh \
     init.kernel.post_boot-pineapple_default_2_3_2_1.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
