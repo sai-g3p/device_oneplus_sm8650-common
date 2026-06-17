@@ -274,6 +274,7 @@ ro.surface_flinger.uclamp.min=103
 debug.hwui.use_hint_manager=true
 debug.sf.enable_adpf_cpu_hint=true
 debug.hwui.target_cpu_time_percent=30
+debug.hwui.skia_atrace_enabled=false
 
 # Incremental FS
 ro.incremental.enable=yes
