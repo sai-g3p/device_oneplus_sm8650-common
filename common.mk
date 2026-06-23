@@ -368,6 +368,7 @@ PRODUCT_PACKAGES += \
 
 # Lindroid
 TARGET_BUILD_LINDROID := true
+$(call soong_config_set,libdl,needs_cfi_slowpath_return,true)
 
 # Logging
 SPAMMY_LOG_TAGS := \
