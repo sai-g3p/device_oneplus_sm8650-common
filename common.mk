@@ -9,6 +9,13 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # ART
 PRODUCT_ENABLE_UFFD_GC := true
+ART_BUILD_TARGET_NDEBUG := true
+ART_BUILD_TARGET_DEBUG := false
+ART_BUILD_HOST_NDEBUG := true
+ART_BUILD_HOST_DEBUG := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+USE_DEX2OAT_DEBUG := false
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
