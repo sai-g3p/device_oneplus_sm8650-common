@@ -1,3 +1,10 @@
+# Logging
+persist.vendor.camera.logInfoMask=false
+persist.log.tag.ACDB-LOADER=S
+persist.log.tag.CVP=S
+persist.log.tag.ResourcesCompat=S
+persist.log.tag.SYNX-UMD=S
+
 # Radio VoNR Calling
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
