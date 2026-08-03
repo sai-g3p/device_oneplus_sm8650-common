@@ -96,6 +96,10 @@ function blob_fixup() {
             grep -q "sched_get_priority_min: 1" "${2}" || echo -e "\nsched_get_priority_min: 1" >> "${2}"
             grep -q "sched_get_priority_max: 1" "${2}" || echo -e "\nsched_get_priority_max: 1" >> "${2}"
             ;;
+        system_ext/etc/seccomp_policy/tcmd.policy)
+            [ "$2" = "" ] && return 0
+            grep -q "lseek: 1" "${2}" || echo -e "\nlseek: 1" >> "${2}"
+            ;;
         odm/lib64/libAlgoProcess.so)
             [ "$2" = "" ] && return 0
             sed -i "s/android.hardware.graphics.common-V3-ndk.so/android.hardware.graphics.common-V7-ndk.so/" "${2}"
