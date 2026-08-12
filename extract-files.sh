@@ -90,6 +90,7 @@ function blob_fixup() {
         vendor/etc/seccomp_policy/atfwd@2.0.policy)
             [ "$2" = "" ] && return 0
             grep -q "gettid: 1" "${2}" || echo -e "\ngettid: 1" >> "${2}"
+            grep -q "lseek: 1" "${2}" || echo -e "\nlseek: 1" >> "${2}"
             ;;
         vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy)
             [ "$2" = "" ] && return 0
