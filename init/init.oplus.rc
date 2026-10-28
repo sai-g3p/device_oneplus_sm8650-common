@@ -49,6 +49,9 @@ on post-fs-data
     chown system system /sys/kernel/oplus_dc_dim/dc_dim_enable
     chmod 0666 /sys/kernel/oplus_dc_dim/dc_dim_enable
 
+on init
+    setprop vendor.powerhal.config powerhint_${ro.boot.product.vendor.sku}.json
+
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
