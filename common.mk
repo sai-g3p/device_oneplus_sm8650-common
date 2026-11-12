@@ -36,7 +36,6 @@ SOONG_CONFIG_NAMESPACES += android_hardware_audio
 SOONG_CONFIG_android_hardware_audio += \
     run_64bit
 SOONG_CONFIG_android_hardware_audio_run_64bit := true
-$(call soong_config_set,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 $(call soong_config_set,qtiaudio,pal_prefer_master_gain,true)
 $(call soong_config_set,qtiaudio,target_uses_oplus_speaker_protection,true)
 $(call soong_config_set,qtiaudio,feature_agm_hidl,true)
